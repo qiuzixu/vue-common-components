@@ -70,6 +70,8 @@ typings/
 
 # Nuxt generate
 dist
+distV2
+distV3
 
 # Serverless directories
 .serverless
@@ -81,5 +83,5 @@ dist
 .vite-inspect
 docs/.vitepress/cache
 targetLib
-vue2-components/distV2
-vue3-components/distV3
+vue2-components/distV2/*
+vue3-components/distV3/*
