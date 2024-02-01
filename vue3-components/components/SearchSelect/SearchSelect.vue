@@ -9,6 +9,7 @@
     :filter-method="handleSelectFilter"
     :placeholder="$props.placeholder"
     :disabled="$props.disabled"
+    :size="$props.size"
   >
     <!-- v-on="$listeners" -->
     <el-option
@@ -28,6 +29,7 @@ import { ElSelect, ElOption } from 'element-plus'
 import 'element-plus/es/components/select/style/css'
 
 import { useSelect } from './hook'
+
 const $props = defineProps({
   value: [String, Number, Array, Boolean],
   filterable: {
@@ -59,6 +61,10 @@ const $props = defineProps({
   disabled: {
     type: Boolean,
     default: false,
+  },
+  size: {
+    type: String,
+    default: 'default',
   },
 })
 const { handleSelectFilter, handleClearOptions, optionsList } = useSelect($props)
