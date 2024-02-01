@@ -1,8 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 // import SearchSelect from '../distV3/kSelect'
-import SearchSelect from 'kj-component-select'
-
+// import SearchSelect from 'kj-component-select'
 </script>
 
 <template>
@@ -15,8 +14,7 @@ import SearchSelect from 'kj-component-select'
     </a>
   </div> -->
   <HelloWorld msg="Vite + Vue" />
-  <!-- <SearchSelect></SearchSelect> -->
-  <kjSelect></kjSelect>
+  <!-- <kjSelect></kjSelect> -->
 </template>
 
 <style scoped lang="scss">

@@ -8,7 +8,7 @@
 <script>
 // import SearchSelect from '../../distV2/kSelect.umd.min.js'
 // import '../../distV2/kSelect.css'
-import SearchSelect from 'kj-component-select'
+// import SearchSelect from 'kj-component-select'
 
 export default {
   name: 'HelloWorld',
