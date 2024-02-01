@@ -85,3 +85,5 @@ docs/.vitepress/cache
 targetLib
 vue2-components/distV2/*
 vue3-components/distV3/*
+vue3-components-vite/node_modules/*
+
