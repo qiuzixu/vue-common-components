@@ -1,35 +1,35 @@
 <template>
-  <!-- <el-input v-model="val" size="small"></el-input> -->
-  <el-select
-    :style="`width: ${$props.width}`"
-    :value="value"
-    :filterable="$props.filterable"
-    v-bind="$attrs"
-    v-on="$listeners"
-    :clearable="$props.clearable"
-    @visible-change="handleClearOptions"
-    :filter-method="handleSelectFilter"
-    size="small"
-    :placeholder="$props.placeholder"
-    :disabled="$props.disabled"
-  >
-    <el-option
-      v-for="opt in optionsList"
-      :key="`${opt.dictValue || opt.value}-${opt.dictLabel || opt.label} `"
-      :label="opt.dictLabel || opt.label"
-      :value="opt.dictValue || opt.value"
-      :disabled="opt.disabled"
-    />
-  </el-select>
+  <div>
+    <el-select
+      :style="`width: ${$props.width}`"
+      :value="value"
+      :filterable="$props.filterable"
+      v-bind="$attrs"
+      v-on="$listeners"
+      :clearable="$props.clearable"
+      @visible-change="handleClearOptions"
+      :filter-method="handleSelectFilter"
+      size="small"
+      :placeholder="$props.placeholder"
+      :disabled="$props.disabled"
+    >
+      <el-option
+        v-for="opt in optionsList"
+        :key="`${opt.dictValue || opt.value}-${opt.dictLabel || opt.label} `"
+        :label="opt.dictLabel || opt.label"
+        :value="opt.dictValue || opt.value"
+        :disabled="opt.disabled"
+      />
+    </el-select>
+  </div>
 </template>
 
 <script>
 import PinyinMatch from 'pinyin-match'
 import { Select, Option } from 'element-ui'
-// import 'element-plus/es/components/select/style/css'
 import 'element-ui/lib/theme-chalk/select.css'
-import 'element-ui/lib/theme-chalk/select-dropdown.css'
-
+// import 'element-ui/lib/theme-chalk/select-dropdown.css'
+import 'element-ui/lib/theme-chalk/icon.css'
 export default {
   name: 'SearchSelect',
   components: { elSelect: Select, elOption: Option },

@@ -23,13 +23,10 @@
 </template>
 
 <script setup>
-import { useAttrs } from 'vue'
-console.log('useAttrs', useAttrs())
 import { ElSelect, ElOption } from 'element-plus'
 import 'element-plus/es/components/select/style/css'
 
 import { useSelect } from './hook'
-
 const $props = defineProps({
   value: [String, Number, Array, Boolean],
   filterable: {
@@ -52,7 +49,7 @@ const $props = defineProps({
   },
   width: {
     type: String,
-    default: '220px',
+    default: '240px',
   },
   placeholder: {
     type: String,
