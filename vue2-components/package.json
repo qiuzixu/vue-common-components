@@ -1,13 +1,19 @@
 {
-  "name": "vue2-components",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@kj-components-vue2/select",
+  "version": "0.0.0",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name kSelect --dest distV2 components/SearchSelect/index.js"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "element-ui": "^2.15.14",
+    "i": "^0.3.7",
+    "kj-component-select": "workspace:^",
+    "kj-web-components": "^0.2.4",
+    "npm": "^10.4.0",
     "vue": "^2.6.14"
   },
   "devDependencies": {

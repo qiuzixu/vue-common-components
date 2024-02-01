@@ -1,0 +1,26 @@
+{
+	"name": "kj-component-select",
+	"version": "0.0.4",
+	"type": "module",
+	"private": false,
+	"main": "targetLib/index.js",
+	"author": "2430251124@qq.com",
+	"description": "select公共组件",
+	"keywords": [
+		"component",
+		"vue"
+	],
+	"files": [
+		"targetLib"
+	],
+	"dependencies": {
+		"kj-component-select": "workspace:^",
+		"pinyin-match": "^1.2.5"
+	},
+	"scripts": {
+		"publish:init": "node script.cjs"
+	},
+	"devDependencies": {
+		"fs-extra": "^11.2.0"
+	}
+}

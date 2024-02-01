@@ -25,12 +25,14 @@
 
 <script>
 import PinyinMatch from 'pinyin-match'
-import { ElSelect, ElOption, ElInput } from 'element-plus'
-import 'element-plus/es/components/select/style/css'
+import { Select, Option } from 'element-ui'
+// import 'element-plus/es/components/select/style/css'
+import 'element-ui/lib/theme-chalk/select.css'
+import 'element-ui/lib/theme-chalk/select-dropdown.css'
 
 export default {
   name: 'SearchSelect',
-  components: { ElSelect, ElOption },
+  components: { elSelect: Select, elOption: Option },
   model: {
     prop: 'value',
     event: 'input',

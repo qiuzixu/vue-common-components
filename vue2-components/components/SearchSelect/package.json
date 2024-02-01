@@ -1,0 +1,31 @@
+{
+	"name": "@kj-component-vue2/select",
+	"version": "0.0.0",
+	"type": "module",
+	"main": "lib/Kj-web-components.umd.min.js",
+	"keywords": [
+		"component",
+		"vue"
+	],
+	"files": [
+		"dist",
+		"package.json"
+	],
+	"scripts": {
+		"lib": "vue-cli-service build --target lib --name KSelect components/SearchSelect/index.js",
+		"publish:npm": "pnpm run publish:pre && pnpm publish --no-git-checks --access public"
+	},
+	"publishConfig": {
+		"access": "public",
+		"main": "dist/index.js",
+		"module": "dist/index.js",
+		"svelte": "dist/index.js",
+		"types": "dist/index.d.ts"
+	},
+	"dependencies": {
+		"pinyin-match": "^1.2.5"
+	},
+	"devDependencies": {
+		"@vue/cli-service": "~5.0.0"
+	}
+}
