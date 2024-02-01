@@ -1,6 +1,6 @@
 {
 	"name": "kj-component-select",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"type": "module",
 	"private": false,
 	"main": "targetLib/index.js",
@@ -18,7 +18,14 @@
 		"pinyin-match": "^1.2.5"
 	},
 	"scripts": {
-		"publish:init": "node script.cjs"
+		"dev": "pnpm run dev:V2 && pnpm run dev:V3",
+		"dev:V2": "pnpm run --filter @kj-components/vue2 serve",
+		"dev:V3": "pnpm run --filter @kj-components/vue3 dev",
+		"build": "pnpm run build:V2 && pnpm run build:V3",
+		"build:V2": "pnpm run --filter @kj-components/vue2 lib",
+		"build:V3": "pnpm run --filter @kj-components/vue3 build",
+		"publish:init": "node script.cjs",
+		"publish": "pnpm run publish:init && npm publish --access public"
 	},
 	"devDependencies": {
 		"fs-extra": "^11.2.0"

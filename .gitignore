@@ -81,3 +81,5 @@ dist
 .vite-inspect
 docs/.vitepress/cache
 targetLib
+vue2-components/distV2
+vue3-components/distV3

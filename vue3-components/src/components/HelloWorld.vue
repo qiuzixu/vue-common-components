@@ -1,6 +1,9 @@
 <script setup>
 import { ref } from 'vue'
-import SearchSelect from '../../components/SearchSelect/index.js'
+// import SearchSelect from '../../components/SearchSelect/index.js'
+import SearchSelect from '../../distV3/kSelect'
+import '../../distV3/style.css'
+
 defineProps({
   msg: String,
 })

@@ -23,7 +23,7 @@ export default defineConfig({
     outDir: 'distV3',
     emptyOutDir: true,
     // 启用/ 禁用 CSS 代码拆分。当启用时，在异步 chunk 中导入的 CSS 将内联到异步 chunk 本身，并在其被加载时一并获取。
-    cssCodeSplit: true
+    // cssCodeSplit: true
     // rollupOptions: {
     // 	output: {
     // 		exports: 'named'
