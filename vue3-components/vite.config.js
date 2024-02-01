@@ -12,8 +12,8 @@ export default defineConfig({
       entry: 'components/SearchSelect/index.js',
       // entry: { test: 'Test/src/index.ts', apply: 'Apply/src/index.ts' }, // 打包入口，需要先创建文件
       name: '@kj-web-components/select',
-      // 'umd',
-      formats: ['es', 'umd', 'cjs'],
+      // 'umd','cjs'
+      formats: ['es', 'umd'],
       fileName: 'kSelect',
       // fileName: (format) => `Kj.${format}.js`
     },
@@ -22,6 +22,8 @@ export default defineConfig({
     // },
     outDir: 'distV3',
     emptyOutDir: true,
+    // 启用/ 禁用 CSS 代码拆分。当启用时，在异步 chunk 中导入的 CSS 将内联到异步 chunk 本身，并在其被加载时一并获取。
+    cssCodeSplit: true
     // rollupOptions: {
     // 	output: {
     // 		exports: 'named'
