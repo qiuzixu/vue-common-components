@@ -1,3 +1,4 @@
 packages:
   - vue2-components
   - vue3-components
+  - vue3-components-cil

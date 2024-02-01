@@ -13,7 +13,7 @@ export default defineConfig({
       // entry: { test: 'Test/src/index.ts', apply: 'Apply/src/index.ts' }, // 打包入口，需要先创建文件
       name: '@kj-web-components/select',
       // 'umd','cjs'
-      formats: ['es', 'umd'],
+      formats: ['es', 'umd', 'cjs'],
       fileName: 'kSelect',
       // fileName: (format) => `Kj.${format}.js`
     },
